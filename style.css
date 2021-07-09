@@ -1,0 +1,49 @@
+/*Header*/
+header
+{
+    display: flex;
+}
+.logo
+{
+    height: 50px;  /* Réglage de la dimension du logo*/
+}
+#conteneurfiltre
+{
+    display: column;
+}
+#filtres, #eco, #Familial, #Romantique, #Animaux, #info
+{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+
+/*Navigation*/
+nav ul
+{
+    margin-left: 200%;
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
