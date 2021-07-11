@@ -11,8 +11,11 @@
 }
 #eco, #Familial, #Romantique, #Animaux
 {
+    height: 30px;
     border: 1px black solid;
     border-radius: 60px;
+    margin-right: 1%;
+    justify-content: center;
 }
 h1
 {
@@ -28,10 +31,31 @@ h4
     font-size: 1.17em;
     margin-right: 30px;
 }
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave /* Couleur des icones  */
+{
+    border: 0px black solid;
+    padding: 8%;
+    border-radius: 90%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
 
 
 
 /*Navigation*/
+a 
+{
+    text-decoration: none;       /* On enlève la barre d'origine du lien */
+}
+a:hover
+{
+    text-decoration: overline;     /* au passage de la souris une barre s'affiche en haut */
+}
+a:active
+{
+    color: blue;
+}
+
 nav ul
 {
     margin-left: 75%;
@@ -51,19 +75,32 @@ img
     margin-right: 3%;
     margin-bottom: 3%;
 }
+.imgherb
+{
+    border: 3px white solid;
+}
+
 .conteneurmarseille
 {
     display: flex;
 }
+
 #hebmarseille
 {
+    display: flex;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding-left: 3%;
 }
+#cannebiere, #Hotelport, #Hotelmouettes, #Hotelmer, #Aubergepanier, #HotelAmina
+{
+    width: 300px;
+    background-color: white;
+    margin-left: 3%;
+}
 #populaires
 {
-   
+    width: 30%;
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-left: 3%;
@@ -82,15 +119,8 @@ img
     height: 600px;
     width: 300px;
 }
-#cannebiere
-{
-    width: 302px;
-    background-color: white;
-}
-.imgherb
-{
-    border: 3px white solid;
-}
+
+
 
 /*Pied de page*/
 footer
@@ -98,7 +128,9 @@ footer
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 3%;
+    margin-top: 2%;
+    padding-left: 2%;
+    padding-right: 35%;
     background-color: #F2F2F2;
 }
 
