@@ -167,11 +167,33 @@ img
     margin-top: 30px;
     padding-right: 6px;
 }
+
+/* Modifications des étoiles */
+.stars
+{
+    font-size: 1.5em;
+    color: blue;
+}
+.starsgris
+{
+    color: grey;
+}
+
+/* titre et icone les plus populaires */
+#entetepopu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
 #populaires
 {
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 15px;
+    padding-left: 3%;
     margin-left: 3%;
 }
 
