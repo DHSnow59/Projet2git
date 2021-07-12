@@ -2,8 +2,40 @@
 /*Header*/
 .logo
 {
-    height: 50px;     /* Réglage de la dimension du logo*/
+    height: 50px;
+    width: 150px;     /* Réglage de la dimension du logo*/
+    margin-bottom: -20px;
+    padding-top: 30px;
 }
+
+/* modification de l'icone marqueur*/
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin-right: -4px;
+    border: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* modification de input rechercher*/
+input[type="search" i]
+{
+    padding: 10px 10px 8px 10px;
+    border: 1px #F2F2F2 solid;
+}
+
+/* modification de input rechercher bouton */
+input[type="submit" i]  
+{
+    color: white;
+    background-color: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 10px 8px 10px;
+    margin-left: -4px;
+}
+
 #filtres,#eco, #Familial, #Romantique, #Animaux, #info
 {
     display: flex;
@@ -28,6 +60,7 @@ h3
 }
 h4
 {
+    
     font-size: 1.17em;
     margin-right: 30px;
 }
@@ -39,6 +72,15 @@ h4
     background-color: #DEEBFF;
     color: #0065FC;
 }
+/*modification de l'icone info*/
+i.fas.fa-info 
+{
+    border: 1px #F2F2F2 solid;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
+
 
 
 
@@ -75,28 +117,55 @@ img
     margin-right: 3%;
     margin-bottom: 3%;
 }
+
+/* Placement du titre "Hébergement a marseille"*/
+#ancre1
+{
+    margin-left: 3%;
+}
+
+/* Positionnement du txt sous les images */
+.txthebergement
+{
+    margin-left: 5%;
+}
+
 .imgherb
 {
     border: 3px white solid;
+    border-radius: 15px 15px 0px 0px;
 }
 
+/* conteneur global section 1*/
 .conteneurmarseille
 {
     display: flex;
 }
 
+/*conteneur hébergement a marseille*/
 #hebmarseille
 {
-    display: flex;
+    height: 20%;
+    width: 55%;
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding-left: 3%;
 }
+
+/* images dans le conteneur hébergement a marseille */
+.imgmarseille
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #cannebiere, #Hotelport, #Hotelmouettes, #Hotelmer, #Aubergepanier, #HotelAmina
 {
     width: 300px;
     background-color: white;
+    border-radius: 15px 15px 10px 10px;
     margin-left: 3%;
+    margin-top: 30px;
+    padding-right: 6px;
 }
 #populaires
 {
