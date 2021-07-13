@@ -75,6 +75,7 @@ h4
 /*modification de l'icone info*/
 i.fas.fa-info 
 {
+    color: #0065FC;
     border: 1px #F2F2F2 solid;
     border-radius: 50%;
     padding: 10px;
@@ -103,6 +104,7 @@ nav ul
     margin-left: 75%;
     list-style-type: none;
     display: flex;
+    position:fixed;                 /* on fixe le menu pour qui descend avec le scrool */
 }
 nav li
 {
@@ -116,6 +118,7 @@ img
     width: 300px;
     margin-right: 3%;
     margin-bottom: 3%;
+    border-radius: 15px;
 }
 
 /* Placement du titre "Hébergement a marseille"*/
@@ -188,13 +191,50 @@ img
     padding-right: 5%;
 }
 
+.conteneurpopuimg
+{
+ border: 3px white solid;
+ border-radius: 15px;
+ margin-right: 2%;
+ margin-bottom: 9%;
+ position: relative;
+ z-index: 3;
+}
+
+.imgmatin
+{
+    width: 94%;
+    height: 22%;
+    margin-bottom: 6.5%;
+}
+.background
+{
+    margin-top: -256px;
+    margin-left: 42%;
+    width: 58%;
+    padding-bottom: 16%;
+    border-radius: 0px 15px 15px 0px;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.txtpopulaires
+{
+   display: column;
+   text-align: center;
+}
 #populaires
 {
+    height: 20%;
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding-left: 3%;
+    padding-right: 3%;
     margin-left: 3%;
+    position: relative;
+    z-index: -1;
 }
 
 /*corp page "Activités a Marseille"*/
