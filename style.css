@@ -1,11 +1,47 @@
+#page {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
 /*Header*/
 
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .logo {
-    height: 50px;
-    width: 150px;
-    /* Réglage de la dimension du logo*/
-    margin-bottom: -20px;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 10%;
+    height: 100px;
+}
+
+.header-filtre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#Recherche {
+    display: flex;
 }
 
 
@@ -13,51 +49,41 @@
 
 .fa-map-marker-alt {
     background-color: #F2F2F2;
-    padding: 10px;
-    margin-right: -4px;
+    padding: 8px 10px 11px 10px;
     border: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 9px 0px 0px 9px;
 }
 
 
 /* modification de input rechercher*/
 
-input [type="search" i] {
-    padding: 10px 10px 8px 10px;
-    border: 1px #F2F2F2 solid;
+#search {
+    height: 35px;
 }
 
 
 /* modification de input rechercher bouton */
 
-input[type="submit" i] {
+#bouton {
     color: white;
     background-color: #0065FC;
     border: 1px #0065FC solid;
     border-radius: 0px 10px 10px 0px;
-    padding: 10px 10px 8px 10px;
-    margin-left: -4px;
+    padding: 9px 10px 9px 10px;
+    margin-left: -5px;
 }
 
 #filtres,
-#eco,
-#Familial,
-#Romantique,
-#Animaux,
-#info {
+.imgfiltres {
     display: flex;
     align-items: center;
 }
 
-#eco,
-#Familial,
-#Romantique,
-#Animaux {
-    height: 30px;
+.imgfiltres {
+    height: 44px;
     border: 1px black solid;
     border-radius: 60px;
     margin-right: 1%;
-    justify-content: center;
 }
 
 h1 {
@@ -81,9 +107,9 @@ h4 {
 /* Couleur des icones  */
 
 {
-    border: 0px black solid;
-    padding: 8%;
-    border-radius: 90%;
+    padding: 15px;
+    margin-left: -3px;
+    border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
 }
@@ -91,12 +117,18 @@ h4 {
 
 /*modification de l'icone info*/
 
+#info {
+    display: flex;
+    align-items: center;
+}
+
 i.fas.fa-info {
     color: #0065FC;
     border: 1px #F2F2F2 solid;
+    height: 10px;
     border-radius: 50%;
-    padding: 10px;
-    margin-right: 15px;
+    padding: 5px 12px 12px 12px;
+    margin-right: 10px;
 }
 
 
@@ -114,14 +146,6 @@ a:hover {
 
 a:active {
     color: blue;
-}
-
-nav ul {
-    margin-left: 75%;
-    list-style-type: none;
-    display: flex;
-    position: fixed;
-    /* on fixe le menu pour qui descend avec le scrool */
 }
 
 nav li {
