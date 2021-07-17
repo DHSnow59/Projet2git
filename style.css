@@ -397,3 +397,66 @@ footer {
     flex-direction: column;
     font-size: medium;
 }
+
+@media all and (max-width: 1024px) {
+    .imgfiltres {
+        margin-right: 1%;
+    }
+    #txtfiltres {
+        font-size: 1.2em;
+        padding-right: 2%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    /*Titre section hébergement */
+    #ancre1 {
+        margin-left: 3%;
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgherb {
+        width: 400px;
+        margin-left: -22%;
+        margin-left: 1px;
+    }
+    /* conteneur global section 1*/
+    .conteneurmarseille {
+        flex-direction: column;
+    }
+    /*conteneur hébergement a marseille*/
+    #hebmarseille {
+        width: auto;
+        margin-bottom: 4%;
+    }
+    /* images dans le conteneur hébergement a marseille */
+    .imgmarseille {
+        justify-content: space-around;
+    }
+    .hotel {
+        width: 400px;
+        margin-left: 0px;
+    }
+    /*corp page "Activités a Marseille"*/
+    #conteneuractivite {
+        flex-direction: column;
+    }
+    /* Section les plus populaires */
+    #entetepopu {
+        display: flex;
+        padding-top: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgpopulaires {
+        width: auto;
+    }
+    .txtpopulaires {
+        width: 282px;
+    }
+    /*Section Activités */
+}
