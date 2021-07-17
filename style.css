@@ -83,7 +83,7 @@ nav ul {
 
 .imgfiltres {
     height: 44px;
-    border: 1px black solid;
+    border: 1px #F2F2F2 solid;
     border-radius: 60px;
     margin-right: 2%;
 }
@@ -102,6 +102,10 @@ nav ul {
 
 h1 {
     font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
 }
 
 h3 {
@@ -144,6 +148,13 @@ i.fas.fa-info {
 
 /*Navigation*/
 
+.naveffet {
+    padding-top: 27px;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+
 a {
     text-decoration: none;
     /* On enlève la barre d'origine du lien */
@@ -151,7 +162,8 @@ a {
 
 a:hover {
     text-decoration: overline;
-    /* au passage de la souris une barre s'affiche en haut */
+    color: blue;
+    /* au passage de la souris une barre s'affiche en haut*/
 }
 
 a:active {
@@ -178,6 +190,8 @@ nav li {
 
 .txthebergement {
     margin-left: 5%;
+    margin-bottom: 3%;
+    margin-top: -5%;
 }
 
 .imgherb {
@@ -201,7 +215,6 @@ nav li {
 /*conteneur hébergement a marseille*/
 
 #hebmarseille {
-    height: 20%;
     width: 58%;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -227,8 +240,13 @@ nav li {
 
 /* Modifications des étoiles */
 
-.stars {
+.starshebergement {
     color: #0065FC;
+}
+
+.starspopulaires {
+    color: #0065FC;
+    padding-top: 19%;
 }
 
 .starsgris {
@@ -276,9 +294,16 @@ nav li {
 /*modification du bloc txt populaires*/
 
 .txtpopulaires {
-    text-align: center;
+    display: flex;
     background-color: white;
     width: 270px;
+    flex-direction: column;
+    padding-left: 5%;
+    align-items: flex-start;
+}
+
+.paragraphe {
+    margin-top: -4%;
 }
 
 .imgpopulaires {
@@ -359,10 +384,16 @@ nav li {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 2%;
     padding-left: 2%;
     padding-right: 35%;
     background-color: #F2F2F2;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.txtpieddepages {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
 }
