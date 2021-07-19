@@ -406,9 +406,6 @@ footer {
         font-size: 1.2em;
         padding-right: 2%;
     }
-    h1 {
-        font-size: 1.2em;
-    }
     h4 {
         font-size: 1.1em;
     }
@@ -420,9 +417,7 @@ footer {
         justify-content: center;
     }
     .imgherb {
-        width: 400px;
-        margin-left: -22%;
-        margin-left: 1px;
+        width: 100%;
     }
     /* conteneur global section 1*/
     .conteneurmarseille {
@@ -438,8 +433,8 @@ footer {
         justify-content: space-around;
     }
     .hotel {
-        width: 400px;
-        margin-left: 0px;
+        width: 45%;
+        margin-left: 0%;
     }
     /*corp page "Activités a Marseille"*/
     #conteneuractivite {
@@ -456,7 +451,39 @@ footer {
         width: auto;
     }
     .txtpopulaires {
-        width: 282px;
+        width: 40%;
     }
     /*Section Activités */
+    #conteneuractivite {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+    }
+    #ancre2 {
+        display: flex;
+        justify-content: center;
+    }
+    #blocvieuxport,
+    #Calanques {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    #fortiles,
+    #dameparc {
+        width: 100%;
+        margin-bottom: 10%;
+        align-items: stretch;
+    }
+    .vieuxport-calanques,
+    .imgactivités2 {
+        width: 100%;
+    }
+    .txtactivités,
+    .txtactivités2 {
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        padding-right: 5%;
+    }
 }
