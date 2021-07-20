@@ -159,11 +159,6 @@
             margin-left: 50px;
         }
         /*corp page hébergement et populaires*/
-        /* Placement du titre "Hébergement a marseille"*/
-        
-        #ancre1 {
-            margin-left: 3%;
-        }
         /* Positionnement du txt sous les images */
         
         .txthebergement {
@@ -192,6 +187,8 @@
         
         #hebmarseille {
             width: 56%;
+            padding-left: 3%;
+            padding-right: 3%;
             background-color: #F2F2F2;
             border-radius: 15px;
         }
@@ -220,7 +217,7 @@
         
         .starspopulaires {
             color: #0065FC;
-            padding-top: 19%;
+            padding-top: 33px;
             padding-bottom: 5px;
         }
         
@@ -262,20 +259,12 @@
         }
         /*modification du bloc txt populaires*/
         
-        #populaires {
-            background-color: #F2F2F2;
-            border-radius: 15px;
-            padding-left: 2%;
-            padding-right: 2%;
-            width: 40%;
-        }
-        
         .paragraphe {
             margin-top: -4%;
         }
         
         .imgpopulaires {
-            width: 60%;
+            width: 40%;
             object-fit: cover;
             border-radius: 15px 0px 0px 15px;
         }
@@ -285,13 +274,13 @@
             border-radius: 15px;
             padding-left: 2%;
             padding-right: 2%;
-            width: 40%;
+            width: 30%;
         }
         
         .txtpopulaires {
             display: flex;
             background-color: white;
-            width: 40%;
+            width: 60%;
             flex-direction: column;
             padding-left: 3%;
             flex-wrap: nowrap;
@@ -306,6 +295,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            width: 100%;
         }
         
         .vieuxport-calanques {
@@ -344,19 +334,9 @@
             padding-left: 5%;
         }
         
-        #fortiles {
-            display: flex;
-            object-fit: cover;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
+        .blocvieuxportCalanques {}
         
-        #dameparc {
-            display: flex;
-            object-fit: cover;
-            flex-direction: column;
-            align-items: flex-end;
-        }
+        .fortilesdame {}
         /*Pied de page*/
         
         footer {
