@@ -16,12 +16,25 @@
         
         nav ul {
             list-style-type: none;
-            padding-top: 50px;
-            padding-bottom: 50px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+        }
+        
+        nav ul li {
+            margin-left: 50px;
+            padding-top: 46px;
+            padding-bottom: 50px;
+        }
+        
+        nav ul li:hover,
+        nav ul li:active {
+            border-top: 2px solid #0065FC;
+        }
+        
+        #inscrire {
+            color: #0065FC;
         }
         
         .logo {
@@ -137,26 +150,17 @@
             padding-top: 27px;
             text-decoration: none;
             color: black;
-            margin-right: 50px;
         }
         
         a {
             text-decoration: none;
             /* On enlève la barre d'origine du lien */
         }
+        /* au passage de la souris une barre s'affiche en haut*/
         
-        a:hover {
-            text-decoration: overline;
-            color: blue;
-            /* au passage de la souris une barre s'affiche en haut*/
-        }
-        
-        a:active {
-            color: blue;
-        }
-        
-        nav li {
-            margin-left: 50px;
+        nav li a:hover,
+        nav li a:active {
+            color: #0065FC;
         }
         /*corp page hébergement et populaires*/
         /* Positionnement du txt sous les images */
@@ -293,21 +297,30 @@
         #conteneuractivite {
             margin-top: 2%;
             display: flex;
+            align-items: flex-start;
+            width: 100%;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+        
+        #globalimg {
+            display: flex;
+            flex-direction: row;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
             width: 100%;
         }
         
         .vieuxport-calanques {
-            height: 500px;
-            width: 400px;
+            height: 450px;
+            width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0px 0px;
         }
         
         .imgactivités2 {
-            height: 200px;
-            width: 400px;
+            height: 170px;
+            width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0px 0px;
         }
@@ -334,9 +347,17 @@
             padding-left: 5%;
         }
         
-        .blocvieuxportCalanques {}
+        .blocvieuxportCalanques {
+            width: 22%;
+        }
         
-        .fortilesdame {}
+        .fortilesdame {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            align-items: stretch;
+            width: 25%;
+        }
         /*Pied de page*/
         
         footer {
