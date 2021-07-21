@@ -424,11 +424,11 @@
                 flex-direction: column;
             }
             /* Section les plus populaires */
-            .imgpopulaires {
-                width: auto;
+            #populaires {
+                width: 96%;
             }
-            .txtpopulaires {
-                width: 40%;
+            .imgpopulaires {
+                width: 100%;
             }
             /*Section Activités */
             #conteneuractivite {
@@ -439,6 +439,10 @@
             #ancre2 {
                 display: flex;
                 justify-content: center;
+            }
+            #globalimg {
+                align-items: stretch;
+                flex-wrap: wrap;
             }
             #blocvieuxport,
             #Calanques {
@@ -451,10 +455,6 @@
                 margin-bottom: 10%;
                 align-items: stretch;
             }
-            .vieuxport-calanques,
-            .imgactivités2 {
-                width: 100%;
-            }
             .txtactivités,
             .txtactivités2 {
                 display: flex;
@@ -465,7 +465,7 @@
             }
         }
         
-        @media all and (max-width: 980px) {
+        @media all and (max-width: 425px) {
             .header-menu {
                 display: flex;
                 height: auto;
