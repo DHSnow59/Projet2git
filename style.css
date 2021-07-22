@@ -381,7 +381,7 @@
         }
         /* Responsive Tablette */
         
-        @media all and (max-width: 1024px) {
+        @media all and (min-width: 426px) and (max-width: 1024px) {
             .imgfiltres {
                 margin-right: 1%;
             }
@@ -418,6 +418,7 @@
             .hotel {
                 width: 45%;
                 margin-left: 0%;
+                padding-right: 10px;
             }
             /*corp page "Activités a Marseille"*/
             #conteneuractivite {
@@ -471,81 +472,73 @@
                 height: auto;
             }
             .logo {
-                padding-top: 2%;
-                height: 150px;
-                width: auto;
+                width: 50%;
             }
             nav ul {
                 font-size: xxx-large;
                 flex-direction: row-reverse;
                 flex-wrap: wrap;
             }
+            nav ul li {
+                margin-left: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
             h1 {
-                font-size: 4.5em;
+                font-size: 1.4em;
             }
             .header-filtre p {
                 font-size: 3em;
             }
             .header-filtre {
-                font-size: 0.9em;
-            }
-            #Recherche {
-                display: flex;
-                font-size: 2.5em;
-            }
-            .fa-map-marker-alt {
-                padding: 40px 50px 40px 50px;
-            }
-            #search {
-                font-size: 1.3em;
-            }
-            #bouton {
-                background-image: url(Reservia/images/logo/search-solid.svg);
+                font-size: 0.3em;
             }
             #filtres,
             .imgfiltres {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
                 align-items: flex-start;
-                justify-content: space-evenly;
-                font-size: 1.6em;
+                flex-wrap: wrap;
+                flex-direction: column;
             }
-            i.fas.fa-info {
-                font-size: 2em;
+            .imgfiltres {
+                width: 100%;
             }
             .conteneurmarseille {
                 flex-direction: column-reverse;
             }
-            .imgpopulaires {
-                width: 40%;
-            }
             #hebmarseille {
-                background-color: white;
-                border-radius: 15px;
+                width: auto;
             }
             .imgmarseille {
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
+            }
+            #populaires {
+                width: 96%;
+                margin-bottom: 2%;
             }
             .hotel {
-                width: 90%;
-                box-shadow: -2px 3px 20px 0px #040404;
+                width: revert;
             }
-            .imgherb {
-                height: 350px;
+            #globalimg {
+                flex-direction: column;
+                align-items: flex-start;
             }
-            #Afficherplus {
-                font-size: 2.5em;
+            .vieuxport-calanques {
+                height: 150px;
+                width: 295px;
             }
-            #ancre2 {
-                justify-content: flex-start;
+            .txtactivités {
+                width: 293px;
+                margin-top: -4%;
+                margin-bottom: 50%;
+            }
+            .fortilesdame {
+                width: 100%;
+                margin-bottom: 10%;
             }
             footer {
+                padding-left: 10%;
+                padding-right: 0%;
                 flex-direction: column;
-                padding-left: 8%;
-            }
-            .txtpieddepages {
-                font-size: 2em;
             }
         }
