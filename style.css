@@ -475,7 +475,6 @@
                 width: 50%;
             }
             nav ul {
-                font-size: xxx-large;
                 flex-direction: row-reverse;
                 flex-wrap: wrap;
             }
@@ -486,6 +485,9 @@
             }
             h1 {
                 font-size: 1.4em;
+            }
+            .header-filtre h1 {
+                font-size: 4em;
             }
             .header-filtre p {
                 font-size: 3em;
@@ -507,6 +509,8 @@
             }
             #hebmarseille {
                 width: auto;
+                background-color: white;
+                box-shadow: -2px 3px 20px 0px #040404;
             }
             .imgmarseille {
                 flex-direction: column;
@@ -525,10 +529,10 @@
             }
             .vieuxport-calanques {
                 height: 150px;
-                width: 295px;
+                width: 400px;
             }
             .txtactivités {
-                width: 293px;
+                width: 396px;
                 margin-top: -4%;
                 margin-bottom: 50%;
             }
