@@ -78,6 +78,14 @@
         padding: 9px 10px 9px 10px;
         margin-left: -5px;
     }
+
+    #totalfiltres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
     
     #filtres,
     .imgfiltres {
