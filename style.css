@@ -382,6 +382,12 @@
     /* Responsive Tablette */
     
     @media all and (min-width: 426px) and (max-width: 1024px) {
+        #filtres, .imgfiltres {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+        }
         .imgfiltres {
             margin-right: 1%;
         }
@@ -429,7 +435,7 @@
             width: 96%;
         }
         .imgpopulaires {
-            width: 100%;
+            width: 70%;
         }
         /*Section Activités */
         #conteneuractivite {
