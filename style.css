@@ -507,6 +507,11 @@
         .header-filtre {
             font-size: 0.3em;
         }
+        .filtresEcofami{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
         #filtres,
         .imgfiltres {
             align-items: flex-start;
@@ -516,6 +521,7 @@
         .imgfiltres {
             width: 100%;
             font-size: 3em;
+            margin-right: 15%;
         }
         i.fas.fa-info {
             font-size: 2.8em;
