@@ -505,6 +505,8 @@
         h3 {
             margin-left: 15px;
             margin-right: 0px;
+            font-size: inherit;
+            font-weight: bold;
 
         }
         #Recherche {
@@ -564,13 +566,13 @@
             width: 100%;
         }
         .imgfiltres {
-            width: 45%;
-            font-size: 3em;
-            margin-right: 10px;
+            width: 47%;
+            font-size: 2.6em;
+            margin-right: 6px;
             margin-bottom: 5px;
         }
         #dogfiltre {
-            width: 60%;
+            width: 65%;
         }
         i.fas.fa-info {
             font-size: 2.8em;
