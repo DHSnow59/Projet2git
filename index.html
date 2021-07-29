@@ -35,7 +35,11 @@
                 <div id="Recherche">
                     <i class="fas fa-map-marker-alt"></i>
                     <input id="search" type="search" placeholder="Marseille, France" name="Recherche">
-                    <input id="bouton" type="submit" value="Rechercher">
+                    <button id="bouton" type="submit" value="Rechercher">
+                        <i class="fas fa-search" id="buttonsearch" aria-hidden="true"></i>
+                        <span>Rechercher</span>
+                    </button>
+            
                 </div>
                 <div id="filtres">
                     <h4 id="txtfiltres">Filtres</h4>
@@ -51,7 +55,7 @@
                         <i class="fas fa-heart"></i>
                         <h3>Romantique</h3>
                     </div>
-                    <div class="imgfiltres">
+                    <div class="imgfiltres" id="dogfiltre">
                         <i class="fas fa-dog"></i>
                         <h3>Animaux autorisés</h3>
                     </div>

@@ -78,6 +78,10 @@
         padding: 9px 10px 9px 10px;
         margin-left: -5px;
     }
+    #buttonsearch {
+        display: none;
+    }
+
     
     #filtres,
     .imgfiltres {
@@ -473,7 +477,9 @@
     
     @media all and (max-width: 425px) {
         .logo {
-            width: 50%;
+             padding-top: 0px; 
+             padding-bottom: 0px; 
+            width: 30%;
         }
         nav ul {
             flex-direction: row-reverse;
@@ -487,12 +493,25 @@
         h1 {
             font-size: 1.4em;
         }
+        
+        h3 {
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
         .fa-map-marker-alt {
             font-size: 3em;
+        }
+        #bouton span {
+            display: none;
+        }
+        #buttonsearch {
+            display: inline-block;
         }
         #txtfiltres {
             font-size: 4em;
             padding-right: 2%;
+            width: 100%;
         }
         .header-filtre h1 {
             font-size: 4em;
@@ -512,12 +531,17 @@
         .imgfiltres {
             align-items: flex-start;
             flex-wrap: wrap;
-            flex-direction: column;
+            flex-direction: row;
+            width: 100%;
         }
         .imgfiltres {
-            width: 100%;
+            width: 45%;
             font-size: 3em;
-            margin-right: 15%;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        #dogfiltre {
+            width: 60%;
         }
         i.fas.fa-info {
             font-size: 2.8em;
@@ -532,6 +556,9 @@
         .imgmarseille {
             flex-direction: column;
             align-items: flex-start;
+        }
+        .imgherb {
+            height: 120px;
         }
         #populaires {
             width: 96%;
