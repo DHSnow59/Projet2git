@@ -583,15 +583,15 @@ footer {
     .header-menu li:not(:first-child):active {
         border-top: none;
     }
-    .header-menu li:not(:first-child, :last-child) {
+    .header-menu li:not(:first-child):not(:last-child) {
         border-bottom: 2px solid #d6d4d4;
     }
     .header-menu li:not(:first-child):hover,
     .header-menu li:not(:first-child):active {
         border-top: none;
     }
-    .header-menu li:not(:first-child, :last-child):hover,
-    .header-menu li:not(:first-child, :last-child):active {
+    .header-menu li:not(:first-child):not(:last-child):hover,
+    .header-menu li:not(:first-child):not(:last-child):active {
         border-bottom: 2px solid #0065FC;
     }
     .logo {
