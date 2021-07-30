@@ -9,6 +9,7 @@ body {
     margin-right: 2%;
 }
 
+
 /*Header*/
 
 .header-menu {
@@ -56,6 +57,10 @@ body {
     height: 100px;
 }
 
+.header-filtre h1 {
+    margin-bottom: 0;
+}
+
 .header-filtre {
     display: flex;
     flex-direction: column;
@@ -67,6 +72,8 @@ body {
 #Recherche {
     display: flex;
 }
+
+
 /* modification de l'icone marqueur*/
 
 .fa-map-marker-alt {
@@ -75,17 +82,21 @@ body {
     border: #F2F2F2;
     border-radius: 9px 0px 0px 9px;
 }
+
+
 /* modification de input rechercher*/
 
 #search {
-        height: 35px;
-        font-weight: bold;
-        font-size: smaller;
-        padding-left: 2%;
-    }
-    ::placeholder {
-        color: black;
-    }
+    height: 35px;
+    font-weight: bold;
+    font-size: smaller;
+    padding-left: 2%;
+}
+
+ ::placeholder {
+    color: black;
+}
+
 
 /* modification de input rechercher bouton */
 
@@ -97,10 +108,10 @@ body {
     padding: 9px 10px 9px 10px;
     margin-left: -5px;
 }
+
 #buttonsearch {
     display: none;
 }
-
 
 #filtres,
 .imgfiltres {
@@ -114,6 +125,8 @@ body {
     border-radius: 60px;
     margin-right: 2%;
 }
+
+
 /*Changement des filtres au passage de la souris*/
 
 .imgfiltres:hover {
@@ -152,6 +165,8 @@ h3 {
     background-color: #DEEBFF;
     color: #0065FC;
 }
+
+
 /*modification de l'icone info*/
 
 #info {
@@ -167,6 +182,8 @@ i.fas.fa-info {
     padding: 5px 12px 12px 12px;
     margin-right: 10px;
 }
+
+
 /*Navigation*/
 
 .naveffet {
@@ -178,13 +195,19 @@ a {
     text-decoration: none;
     /* On enlève la barre d'origine du lien */
 }
+
+
 /* au passage de la souris une barre s'affiche en haut*/
 
 nav li a:hover,
 nav li a:active {
     color: #0065FC;
 }
+
+
 /*corp page hébergement et populaires*/
+
+
 /* Positionnement du txt sous les images */
 
 .txthebergement {
@@ -201,6 +224,8 @@ nav li a:active {
     border: 5px white solid;
     border-radius: 15px 15px 0px 0px;
 }
+
+
 /* conteneur global section 1*/
 
 .conteneurmarseille {
@@ -209,6 +234,8 @@ nav li a:active {
     align-items: stretch;
     flex-direction: row;
 }
+
+
 /*conteneur hébergement a marseille*/
 
 #hebmarseille {
@@ -218,6 +245,8 @@ nav li a:active {
     background-color: #F2F2F2;
     border-radius: 15px;
 }
+
+
 /* images dans le conteneur hébergement a marseille */
 
 .imgmarseille {
@@ -235,6 +264,8 @@ nav li a:active {
     margin-left: 1%;
     margin-right: 2%;
 }
+
+
 /* Modifications des étoiles */
 
 .starshebergement {
@@ -254,6 +285,8 @@ nav li a:active {
 #Afficherplus {
     padding-left: 3%;
 }
+
+
 /* titre et icone les plus populaires */
 
 #entetepopu {
@@ -278,11 +311,15 @@ nav li a:active {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 30px;
 }
+
+
 /* Taille de l'icone populaires */
 
 .fa-chart-line {
     font-size: 1.3em;
 }
+
+
 /*modification du bloc txt populaires*/
 
 .paragraphe {
@@ -314,6 +351,8 @@ nav li a:active {
     line-height: 1;
     align-items: flex-start;
 }
+
+
 /*corp page "Activités a Marseille"*/
 
 #conteneuractivite {
@@ -380,6 +419,8 @@ nav li a:active {
     align-items: stretch;
     width: 25%;
 }
+
+
 /*Pied de page*/
 
 footer {
@@ -402,15 +443,15 @@ footer {
     line-height: 0;
 }
 
+
 /* Responsive Tablette */
 
 @media all and (min-width: 426px) and (max-width: 1024px) {
-
     .header-menu li {
         flex-basis: 80px;
     }
-
-    #filtres, .imgfiltres {
+    #filtres,
+    .imgfiltres {
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-around;
@@ -499,81 +540,76 @@ footer {
     }
 }
 
+
 /* Responsive Smartphone */
 
 @media all and (max-width: 425px) {
-
     body {
         padding: 0;
     }
-
     .header-menu {
-        height: 150px;
+        height: 100px;
     }
-
     .header-menu li {
         flex-basis: 50%;
-        height: 75px;
+        height: 50px;
     }
-
+    /* Organisation de l'ordre HTML du header/nav barre pour mobile*/
     .header-menu li:nth-child(1) {
         order: 1;
         text-align: left;
     }
-
     .header-menu li:nth-child(2) {
         order: 3;
     }
-
     .header-menu li:nth-child(3) {
         order: 4;
     }
-
     .header-menu li:nth-child(4) {
         order: 2;
         text-align: right;
     }
-
     .header-menu li a {
-        height: 75px;
+        height: 50px;
     }
-
     .header-menu li:nth-child(1) img {
         padding-left: 20px;
     }
-
     .header-menu li:nth-child(4) a {
         padding-right: 20px;
     }
-
+    /* Suppression de la bordure supérieure, remplacée par intéraction avec bordure inférieure en jouant avec les enfants du header-menu*/
     .header-menu li:not(:first-child):hover,
     .header-menu li:not(:first-child):active {
         border-top: none;
     }
-
+    .header-menu li:not(:first-child, :last-child) {
+        border-bottom: 2px solid #d6d4d4;
+    }
+    .header-menu li:not(:first-child):hover,
+    .header-menu li:not(:first-child):active {
+        border-top: none;
+    }
     .header-menu li:not(:first-child, :last-child):hover,
     .header-menu li:not(:first-child, :last-child):active {
         border-bottom: 2px solid #0065FC;
     }
-
     .logo {
-        height: 75px;
+        height: 50px;
     }
-
     h1 {
-        font-size: 1.4em;
+        margin-top: 30px;
     }
-    
     h3 {
         margin-left: 15px;
         margin-right: 0px;
         font-size: inherit;
         font-weight: bold;
-
     }
     h4 {
         font-size: 1.1em;
     }
+    /* repositionnement et dimensionnement de la barre de recherche  */
     #Recherche {
         width: 90%;
         height: 50px;
@@ -588,10 +624,9 @@ footer {
         font-weight: bold;
         font-size: large;
         border: none;
-        border-bottom: 1px solid #f2f2f2; 
+        border-bottom: 1px solid #f2f2f2;
         border-top: 1px solid #f2f2f2;
     }
-    
     #bouton span {
         display: none;
     }
@@ -604,13 +639,14 @@ footer {
         margin-left: -5px;
         padding: 9px 16px 9px 16px;
     }
+    /* repositionnement et dimensionnement des filtres  */
     #txtfiltres {
         font-size: 4em;
         padding-right: 2%;
         width: 100%;
     }
     .header-filtre h1 {
-        font-size: 4em;
+        font-size: 4.3em;
     }
     .header-filtre p {
         font-size: 3em;
@@ -618,7 +654,7 @@ footer {
     .header-filtre {
         font-size: 0.3em;
     }
-    .filtresEcofami{
+    .filtresEcofami {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
